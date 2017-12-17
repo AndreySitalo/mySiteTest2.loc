@@ -1,0 +1,459 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*header-top*/
+.header-top{
+	background:#90d0f3;
+	height:32px;
+	color:#fff;
+}
+.header-top p{
+	padding:10px;
+	font-size:12px;
+	margin-right:5px;
+	float: right;
+}
+.header-top a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.header-top .user-text {
+	content: "";
+	display: inline-block;
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -206px transparent;
+	width: 29px;
+	height: 20px;
+	float: left;
+}
+.user-box{
+	position: relative;
+}
+.cart-box{
+	position: relative;
+}
+#cart{
+	position:absolute;
+	right: 0;
+	margin-top: 32px;
+	z-index: 10000;
+	width: 260px;
+
+	padding: 5px 0px 5px 0px;
+	display: none;
+	background: #fff;
+	border: 2px solid #E6E6E6;
+
+}
+#cart h5,#cart p{
+	color:#080808;
+}
+#cart .my-cart{
+	text-align: center;
+}
+#cart .img-product{
+	display: inline-block;
+	width:30% ;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+#cart .img-product img {
+	width: 90%;
+	position: absolute;
+	bottom:0;
+	right: 0;
+}
+#cart .description-product{
+	display: inline-block;
+}
+#cart .description-product h4{
+	color: #080808;
+	font-size: 13px;
+	text-transform: none;
+	font-weight: 600;
+}
+#cart .description-product h5{
+	color: #8f8f8f;
+	font-size: 11px;
+}
+#cart .description-product a{
+	color: #080808;
+}
+#cart h5{
+	margin: 0;
+	padding:5px 0 5px 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+}
+#cart .product-cart{
+	border-top: 1px solid #E6E6E6;
+}
+#cart .total-price{
+	text-align: center;
+	background: #E6E6E6;
+}
+#cart .button-box{
+	text-align: right;
+}
+#user{
+	position:absolute;
+	right: 0;
+	margin-top: 32px;
+	margin-right: 35px;
+	z-index: 10000;
+	padding: 5px 10px 5px 10px;
+	display: none;
+	background: #fff;
+	border: 1px solid #E6E6E6
+}
+#user li{
+	list-style: none;
+	padding: 10px 0 10px 0;
+}
+#user li a{
+	text-transform: uppercase;
+	color:#333333;
+	font-size: 12px;
+
+}
+#user li a:hover{
+	color:#90d0f3;
+}
+.header-top .cart-box span{
+	content: "";
+	display: inline-block;
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -229px transparent;
+	width: 29px;
+	height: 20px;
+	float: left;
+}
+.header-top .cart-box p{
+	padding-right:0 ;
+}
+.header-top .user-pov{
+	display: inline-block;
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -155px transparent;
+	width: 29px;
+	height: 20px;
+	float: right;
+}
+.user-box:hover #user{
+	display: block;
+}
+.cart-box:hover #cart{
+	display: block;
+}
+.user-box:hover .user-pov{
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -180px transparent;
+}
+.header-top .cart-text {
+	text-align: right;
+}
+.header-top .user-text p{
+	text-align: right;
+}
+.header-top p a{
+	color:#fff;
+}
+.header-bottom{
+	height:77px;
+	padding-bottom:0px;
+}
+/*/header-top*/
+/*main menu*/
+.dws-menu *{
+	padding:0;
+	margin:0;
+}
+.dws-menu ul,
+.dws-menu il{
+	list-style:none;
+}
+.dws-menu >ul{
+	display:flex;
+	justify-content:center;	
+}
+.dws-menu > ul li a:hover{
+	color:#90d0f3;
+}
+.dws-menu > ul li a{
+	display:block;
+	padding:20px 0 0 25px;
+	text-transform:uppercase;
+	color:#13181b;
+}
+.dws-menu li ul{
+	position:absolute;
+	min-width:150px;
+	display:none;
+	padding-left:15px;
+	background:#fff;
+	border-bottom: solid 1px #ececec;
+	border-left: solid 1px #ececec;
+	border-right: solid 1px #ececec;
+	z-index:10;
+}
+.dws-menu li > ul li{
+	
+}
+.dws-menu li > ul li a{
+	padding:5px;
+	text-transform:none;
+}
+.dws-menu li:hover ul{
+	display:block;
+}
+
+/*/main menu*/
+.non-padding-right{
+	padding-right:0;
+}.non-padding-left{
+	padding-left:0;
+}
+.breadcrumbs{
+	border-top:1px #000 dotted;
+	z-index:0;
+}
+.breadcrumbs h5{
+	padding-top:5px;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	font-size:12px;
+}
+.page-title h1{
+	padding:0;
+	margin:0;
+	font-size:25px;
+	line-height:24px;
+	text-transform:uppercase;
+	margin-bottom:25px;
+	margin-top:25px;
+}
+.allproduct-box{
+	padding-top:10px;
+	padding-right:0;
+	text-align:center;
+} 
+.allproduct-box .card-product{
+	box-shadow: 2px 2px 3px 0 #ddd;
+    border: solid 1px #ececec;
+	width:180px;
+	height:340px;
+	display:inline-block;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.card-product .img-card{
+	margin:10px 10px 10px 10px;
+	/*border-bottom:1px #000 dotted;*/
+}
+.card-product .img-card img{
+	width: 100%;
+	/*border-bottom:1px #000 dotted;*/
+}
+.card-product .product-name p{
+	padding:0;
+	margin:0;
+}
+.card-product .product-name p a{
+	font-size:16px;
+	line-height:14px;
+	color:#231f20;
+}
+.ochiv{
+    height: 13px;
+	width:100%;
+    background: url(https://us.laneige.com/skin/frontend/enterprise/laneige/images/bkg_rating.png) 0 0 repeat-x;
+}
+.product-action{
+	margin:13px auto 10px auto;
+	width:75px
+}
+.product-action .price{
+	padding-top:10px;
+	padding-bottom:0;
+}
+.product-action .price p{
+	font-size:15px;
+	line-height:14px;
+	color:#000;
+	font-weight:500;
+}
+.product-action .button,#cart .button{
+    background-color: #000;
+    border: none;
+    color: white;
+	font-weight:500;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-transform:uppercase;
+	box-shadow: 2px 2px 3px 0 #ddd;
+}
+.product-action .button:hover{
+	background-color: #66a0ff
+}
+#cart .button:hover{
+	background-color: #66a0ff
+}
+/*�������*/
+#block-for-slider {
+    width: 100%;
+	border-top:2px #000 solid;
+}
+
+#viewport {
+    width: 100%;
+	height:500px;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+}
+
+#next-btn {
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	background: transparent url(https://us.laneige.com/skin/frontend/enterprise/laneige/css/gallery/images/slide-arrows.png) no-repeat left top;
+	top: calc(50% - 25px);
+}
+#prev-btn{
+	position: absolute;
+	width: 20px;
+	height: 40px;
+	background: transparent url(https://us.laneige.com/skin/frontend/enterprise/laneige/css/gallery/images/slide-arrows.png) no-repeat left bottom;
+	top: calc(50% - 25px);
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 20px;
+}
+
+#next-btn {
+    right: 20px;
+}
+
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+	border: solid 2px #ececec;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 3px;
+}
+.slide-nav-btn .active {
+	background-color: #90d0f3;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+}
+/*�������*/
+/*footer*/
+.send-email{
+	margin-top: 40px;
+	height:165px ;
+	background: #f3f3f3;
+	text-align: center;
+}
+.send-email h1{
+	font-size: 30px;
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 0;
+}
+#email{
+	width: 300px;
+}
+.top-footer{
+	margin-top: 40px;
+	height: 330px;
+	text-align: center;
+
+
+}
+.top-footer h5{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.top-footer p{
+	padding: 2px;
+	margin: 0;
+	color: #000000;
+	text-decoration: none;
+}
+.top-footer p a{
+	color: #000000;
+	text-decoration: none;
+}
+.bottom-footer{
+	height: 30px;
+	background: #90d0f3;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+/*/footer*/
+/*category*/
+.category ul{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+}
+/*/category*/
