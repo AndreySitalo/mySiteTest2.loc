@@ -234,7 +234,7 @@ AppAsset::register($this);
                     'background-color': '#fff'
                 });
                 $(this).css({
-                    'background-color': '#90d0f3'
+                    'background-color': '#90d0f2'
                 });
                 slideNow = navBtnId + 1;
             }
