@@ -20,15 +20,20 @@ use yii\helpers\Html;
                     <h1>Категории</h1>
                 </div>
                 <div class="category">
-                    <ul>
-                        <li><a href="#">Для тела (2)</a></li>
-                        <li><a href="#">Для лица (2)</a></li>
-                        <li><a href="#">Для тела (2)</a></li>
-                        <li><a href="#">Для лица (2)</a></li>
-                        <li><a href="#">Для тела (2)</a></li>
-
+                    <ul class="catalog">
+                        <?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
                     </ul>
                 </div>
+                <div class="page-title">
+                    <h1>Бренды</h1>
+                </div>
+                <div class="category">
+                    <ul class="catalog">
+                        <?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
+                    </ul>
+                </div>
+
+
             </div>
             <div class="col-sm-9 non-padding-right" >
                 <div class="allproduct-box">

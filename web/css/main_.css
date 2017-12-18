@@ -254,8 +254,8 @@
 	width:180px;
 	height:340px;
 	display:inline-block;
-	margin-right:12px;
-	margin-bottom:12px;
+	margin-right:10px;
+	margin-bottom:10px;
 }
 .card-product{
 	text-align: center;
@@ -465,7 +465,21 @@
 /*category*/
 .category ul{
 	list-style:none;
-	padding-left:0;
-	margin-left:0;
+	padding: 0;
+	margin: 0;
+
+}
+.category ul li{
+	list-style:none;
+}
+.category ul li > ul{
+	padding-left:40px;
+}
+.category ul li > ul li{
+	padding:3px;
+}
+.category ul a{
+	color:#13181b ;
+	text-transform: uppercase;
 }
 /*/category*/
