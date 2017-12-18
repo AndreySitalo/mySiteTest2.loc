@@ -34,7 +34,7 @@ use yii\helpers\Html;
                 <div class="allproduct-box">
                     <div class="row">
                         <?php foreach ($products as $product):?>
-                            <div class="card-product" style="width: 216px">
+                            <div class="card-product" style="width: 225px">
                                 <div class="img-card">
                                     <!--<img class="lazy" src="https://us.laneige.com/media/catalog/product/cache/3/small_image/160x178/9df78eab33525d08d6e5fb8d27136e95/6/4/643x643_bring_me_pore_care_trial_kit.jpg" alt="Pore Care Trial Kit">-->
                                     <?= Html::img("@web/images/products/min/{$product->image}.png",['alt'=>$product->name])?>

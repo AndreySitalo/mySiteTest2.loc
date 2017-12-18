@@ -28,9 +28,59 @@
 	height: 20px;
 	float: left;
 }
+.header-top p a{
+	color:#fff;
+}
+.header-bottom{
+	height:77px;
+	padding-bottom:0px;
+}
+/*header-top*/
+/*Для пользователей*/
 .user-box{
 	position: relative;
 }
+#user{
+	position:absolute;
+	right: 0;
+	margin-top: 32px;
+	margin-right: 35px;
+	z-index: 10000;
+	padding: 5px 10px 5px 10px;
+	display: none;
+	background: #fff;
+	border: 1px solid #E6E6E6
+}
+#user li{
+	list-style: none;
+	padding: 10px 0 10px 0;
+}
+#user li a{
+	text-transform: uppercase;
+	color:#333333;
+	font-size: 12px;
+}
+#user li a:hover{
+	color:#90d0f3;
+}
+.user-box:hover #user{
+	display: block;
+}
+.user-box:hover .user-pov{
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -180px transparent;
+}
+.header-top .user-pov{
+	display: inline-block;
+	background:url(/web/images/sprite_content.png) no-repeat scroll left -155px transparent;
+	width: 29px;
+	height: 20px;
+	float: right;
+}
+.header-top .user-text p{
+	text-align: right;
+}
+/*Для пользователей*/
+/*Для корзины*/
 .cart-box{
 	position: relative;
 }
@@ -45,7 +95,6 @@
 	display: none;
 	background: #fff;
 	border: 2px solid #E6E6E6;
-
 }
 #cart h5,#cart p{
 	color:#080808;
@@ -99,29 +148,14 @@
 #cart .button-box{
 	text-align: right;
 }
-#user{
-	position:absolute;
-	right: 0;
-	margin-top: 32px;
-	margin-right: 35px;
-	z-index: 10000;
-	padding: 5px 10px 5px 10px;
-	display: none;
-	background: #fff;
-	border: 1px solid #E6E6E6
+#cart .button:hover{
+	background-color: #66a0ff
 }
-#user li{
-	list-style: none;
-	padding: 10px 0 10px 0;
+.cart-box:hover #cart{
+	display: block;
 }
-#user li a{
-	text-transform: uppercase;
-	color:#333333;
-	font-size: 12px;
-
-}
-#user li a:hover{
-	color:#90d0f3;
+.header-top .cart-text {
+	text-align: right;
 }
 .header-top .cart-box span{
 	content: "";
@@ -134,36 +168,8 @@
 .header-top .cart-box p{
 	padding-right:0 ;
 }
-.header-top .user-pov{
-	display: inline-block;
-	background:url(/web/images/sprite_content.png) no-repeat scroll left -155px transparent;
-	width: 29px;
-	height: 20px;
-	float: right;
-}
-.user-box:hover #user{
-	display: block;
-}
-.cart-box:hover #cart{
-	display: block;
-}
-.user-box:hover .user-pov{
-	background:url(/web/images/sprite_content.png) no-repeat scroll left -180px transparent;
-}
-.header-top .cart-text {
-	text-align: right;
-}
-.header-top .user-text p{
-	text-align: right;
-}
-.header-top p a{
-	color:#fff;
-}
-.header-bottom{
-	height:77px;
-	padding-bottom:0px;
-}
-/*/header-top*/
+/*Для корзины*/
+
 /*main menu*/
 .dws-menu *{
 	padding:0;
@@ -214,6 +220,7 @@
 }.non-padding-left{
 	padding-left:0;
 }
+/*хлебные крошки*/
 .breadcrumbs{
 	border-top:1px #000 dotted;
 	z-index:0;
@@ -224,6 +231,7 @@
 	text-transform:uppercase;
 	font-size:12px;
 }
+
 .page-title h1{
 	padding:0;
 	margin:0;
@@ -233,10 +241,12 @@
 	margin-bottom:25px;
 	margin-top:25px;
 }
+/*хлебные крошки*/
+/*Корточка продукта*/
 .allproduct-box{
 	padding-top:10px;
 	padding-right:0;
-	text-align:center;
+	text-align:left;
 } 
 .allproduct-box .card-product{
 	box-shadow: 2px 2px 3px 0 #ddd;
@@ -244,8 +254,11 @@
 	width:180px;
 	height:340px;
 	display:inline-block;
-	margin-right:10px;
-	margin-bottom:10px;
+	margin-right:12px;
+	margin-bottom:12px;
+}
+.card-product{
+	text-align: center;
 }
 .card-product .img-card{
 	margin:10px 10px 10px 10px;
@@ -301,10 +314,9 @@
 .product-action .button:hover{
 	background-color: #66a0ff
 }
-#cart .button:hover{
-	background-color: #66a0ff
-}
-/*�������*/
+/*Корточка продукта*/
+
+/*слайдер*/
 #block-for-slider {
     width: 100%;
 	border-top:2px #000 solid;
@@ -404,7 +416,7 @@
 .slide-nav-btn:hover {
     cursor: pointer;
 }
-/*�������*/
+/*/*слайдер*/
 /*footer*/
 .send-email{
 	margin-top: 40px;
