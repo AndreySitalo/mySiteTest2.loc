@@ -29,7 +29,7 @@ use yii\helpers\Html;
                 </div>
                 <div class="category">
                     <ul class="catalog">
-                        <?= \app\components\MenuWidget::widget(['tpl'=>'menu'])?>
+                        <?= \app\components\BrandWidget::widget(['tpl'=>'menu'])?>
                     </ul>
                 </div>
 

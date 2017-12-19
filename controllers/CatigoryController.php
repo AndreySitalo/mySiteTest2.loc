@@ -7,6 +7,7 @@
  */
 
 namespace app\controllers;
+use app\models\Brand;
 use app\models\Product;
 use app\models\Category;
 use Yii;
@@ -29,5 +30,15 @@ class CatigoryController extends AppController
        $category=Category::findOne($id);
        $this->setMeta('E-SHOPPER /'. $category->name,$category->keywords,$category->description);
        return $this->render('view',compact('products','category','pages'));
+    }
+
+    public function actionBrand(){
+        $id=Yii::$app->request->get('id_brand');
+        $query=Product::find()->where(['idBrand'=>$id]);
+        $pages=new Pagination(['totalCount'=>$query->count(),'pageSize'=>4,'forcePageParam'=>false,'pageSizeParam'=>false]);
+        $products=$query->offset($pages->offset)->limit($pages->limit)->all();
+        $category=Brand::findOne($id);
+
+        return $this->render('view',compact('products','category','pages'));
     }
 }
