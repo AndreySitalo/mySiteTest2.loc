@@ -108,10 +108,10 @@ AppAsset::register($this);
                 <div class="col-sm-7 non-padding-right pull-right">
                     <nav class="dws-menu pull-right">
                         <ul >
-                            <li><a href="">Главная</a></li>
+                            <li><a href="/">Главная</a></li>
                             <li><a href="">Shop</a></li>
                             <li><a href="" >Blog</a></li>
-                            <li><a href="">Категория</a>
+                            <li><a href="/catigory/1">Категория</a>
                                 <ul >
                                     <li><a href="">Для тела</a></li>
                                     <li><a href="">Для ног</a></li>

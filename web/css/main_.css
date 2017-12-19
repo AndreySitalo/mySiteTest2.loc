@@ -268,6 +268,9 @@
 	width: 100%;
 	/*border-bottom:1px #000 dotted;*/
 }
+.card-product .product-name{
+	height: 40px;
+}
 .card-product .product-name p{
 	padding:0;
 	margin:0;

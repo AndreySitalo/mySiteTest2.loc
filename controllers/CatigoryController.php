@@ -38,7 +38,7 @@ class CatigoryController extends AppController
         $pages=new Pagination(['totalCount'=>$query->count(),'pageSize'=>4,'forcePageParam'=>false,'pageSizeParam'=>false]);
         $products=$query->offset($pages->offset)->limit($pages->limit)->all();
         $category=Brand::findOne($id);
-
+        $this->setMeta('E-SHOPPER /'. $category->name,$category->keyword,$category->description);
         return $this->render('view',compact('products','category','pages'));
     }
 }
